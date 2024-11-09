@@ -4,6 +4,7 @@ public class Controller : MonoBehaviour
 {
     public float speed;
     public float projectilleSpeed;
+    public float projectilleSpawnDistance;
     public Rigidbody2D rigidbody2D;
     public FoodProjectile foodPrefab;
 
@@ -24,8 +25,7 @@ public class Controller : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision");
-        var food = collision.collider.gameObject.GetComponent<Food>();
+        var food = collision.gameObject.GetComponent<Food>();
         if (food != null && !hasFood)
         {
             hasFood = true;
@@ -38,8 +38,9 @@ public class Controller : MonoBehaviour
         if (hasFood)
         {
             var food = Instantiate<FoodProjectile>(foodPrefab);
-            var direction = Input.mousePosition - transform.position;
-            food.rigidbody2D.position = transform.position;
+            var direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            direction = direction.normalized;
+            food.rigidbody2D.position = transform.position + direction * projectilleSpawnDistance;
             food.rigidbody2D.velocity = direction.normalized * projectilleSpeed;
             hasFood = false;
         }
