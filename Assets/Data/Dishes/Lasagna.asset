@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d07a17abec5d140a19aae6acc86d1eef, type: 3}
+  m_Name: Lasagna
+  m_EditorClassIdentifier: 
+  uiVisual: {fileID: 0}
+  recipe:
+  - {fileID: 11400000, guid: 868aaac5092834f1287107e6c14fd625, type: 2}
+  - {fileID: 11400000, guid: d40080f751a994a13a56f9f3fd402baf, type: 2}
+  deliveryBonusTime: 5
