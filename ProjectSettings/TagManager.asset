@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Character
   - Truck
+  - Food
   layers:
   - Default
   - TransparentFX
