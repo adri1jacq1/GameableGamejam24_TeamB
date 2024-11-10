@@ -14444,6 +14444,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3592817798370018491, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5816921438209140077, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
       propertyPath: m_Name
       value: Truck
@@ -14503,7 +14507,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5816921438209140077, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1561456483}
   m_SourcePrefab: {fileID: 100100000, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
 --- !u!1 &1164018487
 GameObject:
@@ -15610,6 +15617,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1561456477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5816921438209140077, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
+  m_PrefabInstance: {fileID: 1062898138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &1561456483
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561456477}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000018626444, y: -0.055751488}
+  m_Size: {x: 0.28849608, y: 0.6884966}
+  m_Direction: 0
 --- !u!1 &1655859354
 GameObject:
   m_ObjectHideFlags: 0
