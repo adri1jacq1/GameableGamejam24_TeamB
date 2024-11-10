@@ -11,7 +11,7 @@ public class Controller : MonoBehaviour
     public float projectilleSpawnDistance;
     public Rigidbody2D rigidbody2D;
     public FoodProjectile foodPrefab;
-    public GameObject canon; 
+    public SpriteRenderer canon; 
 
     bool hasFood = false;
 
@@ -42,6 +42,7 @@ public class Controller : MonoBehaviour
         if (food != null && !hasFood)
         {
             hasFood = true;
+            canon.color = Color.green;
             Destroy(food.gameObject);
         }
     }
@@ -56,6 +57,7 @@ public class Controller : MonoBehaviour
             food.rigidbody2D.position = transform.position + direction * projectilleSpawnDistance;
             food.rigidbody2D.velocity = direction.normalized * projectilleSpeed;
             hasFood = false;
+            canon.color = Color.gray;
         }
     }
 }

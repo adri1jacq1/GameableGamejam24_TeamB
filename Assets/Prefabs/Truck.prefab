@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.25, g: 0.25, b: 0.24655172, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -185,12 +185,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotationSpeed: 5
+  rotationSpeed: 10
   projectilleSpeed: 10
   projectilleSpawnDistance: 2
   rigidbody2D: {fileID: 1068376200319095972}
   foodPrefab: {fileID: 7250541689145237883, guid: 7f37c25f46f5a5e45bf9351d5356ad34, type: 3}
-  canon: {fileID: 5026557028953070839}
+  canon: {fileID: 8365106621613466743}
 --- !u!50 &1068376200319095972
 Rigidbody2D:
   serializedVersion: 4
@@ -254,7 +254,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.125, y: 5}
+    oldSize: {x: 1.25, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
