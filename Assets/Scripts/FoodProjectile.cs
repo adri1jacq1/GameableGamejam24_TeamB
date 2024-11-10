@@ -4,6 +4,9 @@ public class FoodProjectile : MonoBehaviour
 {
     public Rigidbody2D rigidbody2D;
 
+    [SerializeField]
+    private SpriteRenderer spriteRenderer;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
          
@@ -19,4 +22,8 @@ public class FoodProjectile : MonoBehaviour
         }
     }
 
+    public void SetDish(SO_Dish dish)
+    {
+        spriteRenderer.sprite = dish.uiVisual;
+    }
 }
