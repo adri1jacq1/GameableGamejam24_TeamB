@@ -46,6 +46,10 @@ public class Controller : MonoBehaviour
             canon.color = Color.green;
             Destroy(food.gameObject);
         }
+        if (food != null &&  hasFood)
+        { 
+            Destroy(food.gameObject);
+        }
     }
 
     private void Fire()
