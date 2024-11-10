@@ -315,6 +315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodPrefab: {fileID: 4683450365137343111, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
   foodSpawnPosition: {fileID: 875049328}
+  spawnedFood: {fileID: 0}
 --- !u!61 &214439141
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -489,6 +490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodPrefab: {fileID: 4683450365137343111, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
   foodSpawnPosition: {fileID: 1655859354}
+  spawnedFood: {fileID: 0}
 --- !u!61 &253785104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1571,6 +1573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodPrefab: {fileID: 4683450365137343111, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
   foodSpawnPosition: {fileID: 941929471}
+  spawnedFood: {fileID: 0}
 --- !u!1 &999415819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,6 +1922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1164018488}
   - component: {fileID: 1164018489}
+  - component: {fileID: 1164018490}
   m_Layer: 0
   m_Name: Circle (2)
   m_TagString: Untagged
@@ -1993,6 +1997,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1164018490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164018487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a79571234cb164480bc21d09714f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 5004052480565628062, guid: 9a1d6a211d802564e94e655449a0f859, type: 3}
+  spawnedCharacter: {fileID: 0}
 --- !u!1 &1221447175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +2021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221447176}
   - component: {fileID: 1221447177}
+  - component: {fileID: 1221447178}
   m_Layer: 0
   m_Name: Circle (4)
   m_TagString: Untagged
@@ -2077,6 +2096,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1221447178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221447175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a79571234cb164480bc21d09714f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 5004052480565628062, guid: 9a1d6a211d802564e94e655449a0f859, type: 3}
+  spawnedCharacter: {fileID: 0}
 --- !u!1 &1414141802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,6 +2222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1542723679}
   - component: {fileID: 1542723680}
+  - component: {fileID: 1542723681}
   m_Layer: 0
   m_Name: Circle (1)
   m_TagString: Untagged
@@ -2263,6 +2297,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1542723681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542723678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a79571234cb164480bc21d09714f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 5004052480565628062, guid: 9a1d6a211d802564e94e655449a0f859, type: 3}
+  spawnedCharacter: {fileID: 0}
 --- !u!1 &1613187503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,8 +2552,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7373295426095278046, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952039558085621519, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952039558085621519, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7373295426095278046, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
@@ -2519,6 +2580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1834046608}
   - component: {fileID: 1834046609}
+  - component: {fileID: 1834046610}
   m_Layer: 0
   m_Name: Circle (3)
   m_TagString: Untagged
@@ -2593,6 +2655,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1834046610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834046607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a79571234cb164480bc21d09714f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 5004052480565628062, guid: 9a1d6a211d802564e94e655449a0f859, type: 3}
+  spawnedCharacter: {fileID: 0}
 --- !u!1 &1896739037
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,6 +2679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896739038}
   - component: {fileID: 1896739039}
+  - component: {fileID: 1896739040}
   m_Layer: 0
   m_Name: Circle (5)
   m_TagString: Untagged
@@ -2677,6 +2754,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1896739040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896739037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a79571234cb164480bc21d09714f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 5004052480565628062, guid: 9a1d6a211d802564e94e655449a0f859, type: 3}
+  spawnedCharacter: {fileID: 0}
 --- !u!1 &1992091059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,6 +2931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad59e5370ffc4cd419cfeae7fa0ddc94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawningTime: 2
   restaurantList:
   - {fileID: 987169063}
   - {fileID: 214439139}
@@ -2874,6 +2966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2104449234}
   - component: {fileID: 2104449235}
+  - component: {fileID: 2104449236}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -2948,6 +3041,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2104449236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104449233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a79571234cb164480bc21d09714f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 5004052480565628062, guid: 9a1d6a211d802564e94e655449a0f859, type: 3}
+  spawnedCharacter: {fileID: 0}
 --- !u!1001 &770673352044821123
 PrefabInstance:
   m_ObjectHideFlags: 0
