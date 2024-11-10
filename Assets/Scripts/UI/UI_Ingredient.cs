@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.Mesh;
 
 public class UI_Ingredient : MonoBehaviour
 {
@@ -36,6 +37,19 @@ public class UI_Ingredient : MonoBehaviour
             remainingTime -= Time.deltaTime;
             timer.sprite = GetTimerSprite(remainingTime);
         }
+    }
+
+    public void FielSpace(SO_Ingredient insertedIngredientData)
+    {
+        ingredientData = insertedIngredientData;
+        portrait.gameObject.SetActive(true);
+        portrait.sprite = ingredientData.uiVisual;
+    }
+
+    public void EmptySpace()
+    {
+        portrait.gameObject.SetActive(false);
+        portrait.sprite = null;
     }
 
     private Sprite GetTimerSprite(float time)

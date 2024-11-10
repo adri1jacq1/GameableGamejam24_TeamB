@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
+    [SerializeField]
+    private UI_IngredientsInventory ingredientInventory;
+
+
     public float speed;
 
     public float rotationSpeed;
@@ -43,6 +47,7 @@ public class Controller : MonoBehaviour
         {
             hasFood = true;
             canon.color = Color.green;
+            ingredientInventory.TryAddIngredient(food.ingredient);
             Destroy(food.gameObject);
         }
     }
