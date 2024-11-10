@@ -11895,18 +11895,6 @@ PrefabInstance:
       value: Truck
       objectReference: {fileID: 0}
     - target: {fileID: 7120233940942981590, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7120233940942981590, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7120233940942981590, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7120233940942981590, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.487
       objectReference: {fileID: 0}
@@ -12013,7 +12001,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1
+  orthographic size: 1.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

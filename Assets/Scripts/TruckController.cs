@@ -33,7 +33,7 @@ public class Controller : MonoBehaviour
         var direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         direction.z = 0;
         direction = direction.normalized;
-        canon.transform.eulerAngles = new Vector3(0.0f,0.0f,-Vector3.SignedAngle(direction, Vector3.up, Vector3.forward));
+        canon.transform.eulerAngles = new Vector3(0.0f,0.0f,-Vector3.SignedAngle(direction, Vector3.left, Vector3.forward));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -57,7 +57,7 @@ public class Controller : MonoBehaviour
             food.rigidbody2D.position = transform.position + direction * projectilleSpawnDistance;
             food.rigidbody2D.velocity = direction.normalized * projectilleSpeed;
             hasFood = false;
-            canon.color = Color.gray;
+            canon.color = Color.white;
         }
     }
 }
