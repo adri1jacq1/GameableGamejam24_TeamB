@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class UI_DishInventory : MonoBehaviour
@@ -7,6 +8,11 @@ public class UI_DishInventory : MonoBehaviour
     [SerializeField]
     private List<UI_Dish> uI_DishesSpacesList;
     private List<SO_Dish> dishesDataList = new();
+
+    public bool HasFood()
+    {
+        return dishesDataList.Count > 0;
+    }
 
     public void AddDish(SO_Dish addedDish)
     {

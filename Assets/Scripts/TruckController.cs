@@ -18,8 +18,6 @@ public class Controller : MonoBehaviour
     public SpriteRenderer canon;
     public ParticleSystem particleSystem;
 
-    bool hasFood = false;
-
     // Update is called once per frame
     void Update()
     {
@@ -44,14 +42,13 @@ public class Controller : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var food = collision.gameObject.GetComponent<Food>();
-        if (food != null && !hasFood)
+        if (food != null && !dishInventory.HasFood())
         {
-            hasFood = true;
             canon.color = Color.green;
             dishInventory.AddDish(food.dish);
             Destroy(food.gameObject);
         }
-        if (food != null &&  hasFood)
+        if (food != null && dishInventory.HasFood())
         { 
             Destroy(food.gameObject);
         }
@@ -59,14 +56,14 @@ public class Controller : MonoBehaviour
 
     private void Fire()
     {
-        if (hasFood)
+        if (dishInventory.HasFood())
         {
+            var foodToThrow = dishInventory.RemoveDish(); // TODO: use sprite from foodToThrow as projectile
             var food = Instantiate<FoodProjectile>(foodPrefab);
             var direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             direction = direction.normalized;
             food.rigidbody2D.position = transform.position + direction * projectilleSpawnDistance;
             food.rigidbody2D.velocity = direction.normalized * projectilleSpeed;
-            hasFood = false;
             canon.color = Color.white;
             particleSystem.Play();
         }
