@@ -14,6 +14,11 @@ public class UI_DishInventory : MonoBehaviour
         return dishesDataList.Count > 0;
     }
 
+    public bool IsFull()
+    {
+        return dishesDataList.Count == uI_DishesSpacesList.Count;
+    }
+
     public void AddDish(SO_Dish addedDish)
     {
         if(dishesDataList.Count < uI_DishesSpacesList.Count)

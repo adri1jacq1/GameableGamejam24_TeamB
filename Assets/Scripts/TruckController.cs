@@ -42,13 +42,13 @@ public class Controller : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var food = collision.gameObject.GetComponent<Food>();
-        if (food != null && !dishInventory.HasFood())
+        if (food != null && !dishInventory.IsFull())
         {
             canon.color = Color.green;
             dishInventory.AddDish(food.dish);
             Destroy(food.gameObject);
         }
-        if (food != null && dishInventory.HasFood())
+        if (food != null && dishInventory.IsFull())
         { 
             Destroy(food.gameObject);
         }
