@@ -7,10 +7,10 @@ public class CharacterSpawner : MonoBehaviour
     // Start is called before the first frame update
     //public List<GameObject> characterPrefabsList = new List<GameObject>();
     public GameObject characterPrefab;
-    public List<GameObject> characterPlacesList = new List<GameObject>();
-    public Dictionary<GameObject,bool> characterPlaceDict = new Dictionary<GameObject, bool>();
+    public List<GameObject> characterPlacesList  ; 
     void Start()
     {
+         
         StartSpawning();
     }
 
@@ -29,11 +29,8 @@ public class CharacterSpawner : MonoBehaviour
 
             int randomIndex2 = Random.Range(0, characterPlacesList.Count);
             GameObject randomPlace = characterPlacesList[randomIndex2];
-            GameObject character = Instantiate(characterPrefab, randomPlace.transform.position, Quaternion.identity);
-            character.GetComponent<CharacterSetter>().SetCharacter();
-
-           
-
+            randomPlace.GetComponent<CharacterPlaceHandler>().SpawnCharacter();
+             
             //Instantiate(randomCharacter, randomPlace.transform.position, Quaternion.identity);
             //random
         }

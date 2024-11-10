@@ -13,16 +13,18 @@ public class FoodSpawner : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+     
     public void SpawnFood()
     {  
        if(spawnedFood != null)
         {
-            spawnedFood = Instantiate(foodPrefab, foodSpawnPosition.transform.position, Quaternion.identity); 
+            Debug.Log("Food already exists");
+
+        }
+        else
+        {
+
+           spawnedFood = Instantiate(foodPrefab, foodSpawnPosition.transform.position, Quaternion.identity);
         }
 
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class FoodSpawnHandler : MonoBehaviour
 {
     // Start is called before the first frame update
+    public int spawningTime = 2;
     void Start()
     {
         StartSpawning();
@@ -24,9 +25,8 @@ public class FoodSpawnHandler : MonoBehaviour
     IEnumerator SpawnFood()
     {
         while (true)
-        {
-            if (testCount >2 ) yield break;
-            yield return new WaitForSeconds(2);
+        { 
+            yield return new WaitForSeconds( spawningTime );
             int randomIndex = Random.Range(0, restaurantList.Count);
             GameObject randomRestaurant = restaurantList[randomIndex];
             randomRestaurant.GetComponent<FoodSpawner>().SpawnFood();

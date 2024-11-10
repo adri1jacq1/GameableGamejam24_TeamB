@@ -5,8 +5,7 @@ public class Food : MonoBehaviour
 {
     public float freshnessDuration = 10f;
     private bool isRotten = false;
-      
-    public static event Action OnFoodRotten;
+       
 
     private void Update()
     { 
@@ -24,8 +23,7 @@ public class Food : MonoBehaviour
         {
             freshnessDuration -= Time.deltaTime;
             if (freshnessDuration <= -1)
-            {
-                freshnessDuration = 0;
+            { 
                 Destroy(gameObject);
             }
         }
