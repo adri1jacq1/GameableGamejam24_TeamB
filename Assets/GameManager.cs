@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     public int eatingFoodHealthAmount = 5;
     public int rottenFoodHealthAmount = 2;
     int lvl;
+    public int foodEaten;
     private void Awake()
     {
         if (Instance == null)
@@ -68,6 +70,7 @@ public class GameManager : MonoBehaviour
     public void HandleFoodEaten()
     { 
         healthTime +=  eatingFoodHealthAmount;
+        ++foodEaten;
     }
 
     public void HandleFoodRotten()
@@ -79,6 +82,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Game Over! Time's up.");
         // Additional game-over actions
+        SceneManager.LoadScene(3);
     }
 
     public float GethealthTime()
