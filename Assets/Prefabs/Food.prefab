@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -327,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -492,6 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -657,6 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -822,6 +826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -987,6 +992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -1111,8 +1117,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients:
+  - {fileID: 11400000, guid: 602d8322ada6f4fab96ff5f4f38535c6, type: 2}
+  - {fileID: 11400000, guid: 9cc3dee0501af4838b13bfe6ad8e7859, type: 2}
+  - {fileID: 11400000, guid: a3cd1ddfd84684233a7789b51f86251e, type: 2}
+  - {fileID: 11400000, guid: f8d0a363b375e4d83af6567f5143ca60, type: 2}
+  - {fileID: 11400000, guid: d08c5f67afe6943289329eba776ac1ef, type: 2}
   currentSpriteGobj: {fileID: 0}
-  ingredient: {fileID: 11400000, guid: 602d8322ada6f4fab96ff5f4f38535c6, type: 2}
+  ingredient: {fileID: 0}
   sprite: {fileID: 2558103754082473651}
 --- !u!212 &2558103754082473651
 SpriteRenderer:
@@ -1328,6 +1340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -1493,6 +1506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -1658,6 +1672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -1823,6 +1838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}
@@ -1988,6 +2004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freshnessDuration: 4
+  allIngredients: []
   currentSpriteGobj: {fileID: 0}
   ingredient: {fileID: 0}
   sprite: {fileID: 0}

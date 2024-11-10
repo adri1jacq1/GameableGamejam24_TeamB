@@ -6,7 +6,7 @@ public class Food : MonoBehaviour
 {
     public float freshnessDuration = 10f;
     private bool isRotten = false;
-    //public List<GameObject> foodSprites;
+    public List<SO_Ingredient> allIngredients;
     public GameObject currentSpriteGobj;
     public SO_Ingredient ingredient;
 
@@ -15,10 +15,8 @@ public class Food : MonoBehaviour
 
     private void Start()
     {
-        // TODO restore random selection
-        //int randomIndex = UnityEngine.Random.Range(0, foodSprites.Count);
-        //currentSpriteGobj = foodSprites[randomIndex];
-
+        int randomIndex = UnityEngine.Random.Range(0, allIngredients.Count);
+        ingredient = allIngredients[randomIndex];
         sprite.sprite = ingredient.uiVisual;
     }
 
