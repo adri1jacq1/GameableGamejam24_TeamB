@@ -5,7 +5,7 @@ using UnityEngine;
 public class FoodSpawnHandler : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int spawningTime = 2;
+    public int spawningTime = 4;
     void Start()
     {
         StartSpawning();
