@@ -1,12 +1,18 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Food : MonoBehaviour
 {
     public float freshnessDuration = 10f;
     private bool isRotten = false;
-       
-
+    public List<GameObject> foodSprites;
+    private void Start()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, foodSprites.Count);
+        GameObject randomSprite = foodSprites[randomIndex];
+        randomSprite.SetActive(true);
+    }
     private void Update()
     { 
         if (!isRotten)
