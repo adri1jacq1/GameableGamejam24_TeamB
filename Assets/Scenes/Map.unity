@@ -14520,6 +14520,10 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7166932501019062818, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
+      propertyPath: dishInventory
+      value: 
+      objectReference: {fileID: 1170405239}
+    - target: {fileID: 7166932501019062818, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
       propertyPath: rotationSpeed
       value: 400
       objectReference: {fileID: 0}
@@ -14816,6 +14820,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46279604c148d44f388ed33bbebae791, type: 3}
+--- !u!114 &1170405239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2529031087876193285, guid: 46279604c148d44f388ed33bbebae791, type: 3}
+  m_PrefabInstance: {fileID: 1170405238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385696c6ed2fce7409b5c0fa20a0cdb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1210111551
 GameObject:
   m_ObjectHideFlags: 0

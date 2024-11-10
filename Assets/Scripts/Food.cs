@@ -6,18 +6,18 @@ public class Food : MonoBehaviour
 {
     public float freshnessDuration = 10f;
     private bool isRotten = false;
-    public List<SO_Ingredient> allIngredients;
+    public List<SO_Dish> allDishes;
     public GameObject currentSpriteGobj;
-    public SO_Ingredient ingredient;
+    public SO_Dish dish;
 
     [SerializeField]
     private SpriteRenderer sprite;
 
     private void Start()
     {
-        int randomIndex = UnityEngine.Random.Range(0, allIngredients.Count);
-        ingredient = allIngredients[randomIndex];
-        sprite.sprite = ingredient.uiVisual;
+        int randomIndex = UnityEngine.Random.Range(0, allDishes.Count);
+        dish = allDishes[randomIndex];
+        sprite.sprite = dish.uiVisual;
     }
 
     private void Update()

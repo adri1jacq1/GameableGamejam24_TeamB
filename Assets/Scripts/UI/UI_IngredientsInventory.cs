@@ -7,6 +7,10 @@ public class UI_IngredientsInventory : MonoBehaviour
     [SerializeField]
     public List<UI_Ingredient> uI_IngredientSpacesList;
     private List<SO_Ingredient> ingredientsDataList = new();
+    [SerializeField]
+    private List<SO_Dish> allDishes;
+    [SerializeField]
+    private UI_DishInventory dishInventory;
 
     public void TryAddIngredient(SO_Ingredient addedDish)
     {
