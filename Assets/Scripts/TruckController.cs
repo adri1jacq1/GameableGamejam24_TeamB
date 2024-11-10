@@ -11,7 +11,8 @@ public class Controller : MonoBehaviour
     public float projectilleSpawnDistance;
     public Rigidbody2D rigidbody2D;
     public FoodProjectile foodPrefab;
-    public SpriteRenderer canon; 
+    public SpriteRenderer canon;
+    public ParticleSystem particleSystem;
 
     bool hasFood = false;
 
@@ -58,6 +59,7 @@ public class Controller : MonoBehaviour
             food.rigidbody2D.velocity = direction.normalized * projectilleSpeed;
             hasFood = false;
             canon.color = Color.white;
+            particleSystem.Play();
         }
     }
 }
