@@ -7,11 +7,14 @@ public class Food : MonoBehaviour
     public float freshnessDuration = 10f;
     private bool isRotten = false;
     public List<GameObject> foodSprites;
+    public GameObject currentSpriteGobj;
     private void Start()
     {
         int randomIndex = UnityEngine.Random.Range(0, foodSprites.Count);
-        GameObject randomSprite = foodSprites[randomIndex];
-        randomSprite.SetActive(true);
+        
+        currentSpriteGobj = foodSprites[randomIndex];
+
+        currentSpriteGobj.SetActive(true);
     }
     private void Update()
     { 
@@ -40,7 +43,7 @@ public class Food : MonoBehaviour
         isRotten = true;
         Debug.Log("Food has become rotten!"); 
         GameManager.Instance.HandleFoodRotten();
-        GetComponent<Renderer>().material.color = Color.gray;
+        currentSpriteGobj.GetComponent<Renderer>().material.color = Color.gray;
 
     }
 
