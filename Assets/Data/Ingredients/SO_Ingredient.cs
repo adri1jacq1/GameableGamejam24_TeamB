@@ -16,4 +16,5 @@ public class SO_Ingredient : ScriptableObject
     public IngredientType type;
     public Sprite uiVisual;
     public float lifeTime = 10.0f;
+    public float expirationPenalityTime = 2.0f;
 }
