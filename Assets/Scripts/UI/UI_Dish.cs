@@ -15,10 +15,12 @@ public class UI_Dish : MonoBehaviour
     {
         dishData = insertedDishData;
         portrait.sprite = dishData.uiVisual;
+        portrait.gameObject.SetActive(true);
     }
 
     public void EmptySpace()
     {
         portrait.sprite = null;
+        portrait.gameObject.SetActive(false);
     }
 }

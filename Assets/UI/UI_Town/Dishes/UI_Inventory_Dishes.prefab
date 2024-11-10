@@ -34,7 +34,6 @@ RectTransform:
   - {fileID: 5826556298118978116}
   - {fileID: 5503610476610376003}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -50,7 +49,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5723916360593168270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d24276fd84a4c82b84033b050ca534, type: 3}
+  m_Script: {fileID: 11500000, guid: 385696c6ed2fce7409b5c0fa20a0cdb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   uI_DishesSpacesList:
@@ -88,6 +87,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7595289567107325020}
     m_Modifications:
     - target: {fileID: 2270704994031276369, guid: b944a57013afd4fc9b77e0a89df4c41b, type: 3}
@@ -127,6 +127,9 @@ PrefabInstance:
       value: UI_Dish_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b944a57013afd4fc9b77e0a89df4c41b, type: 3}
 --- !u!224 &3350404899826434479 stripped
 RectTransform:
@@ -149,6 +152,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7595289567107325020}
     m_Modifications:
     - target: {fileID: 2270704994031276369, guid: b944a57013afd4fc9b77e0a89df4c41b, type: 3}
@@ -192,6 +196,9 @@ PrefabInstance:
       value: UI_Dish_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b944a57013afd4fc9b77e0a89df4c41b, type: 3}
 --- !u!114 &2310481779759914563 stripped
 MonoBehaviour:
@@ -214,6 +221,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7595289567107325020}
     m_Modifications:
     - target: {fileID: 2270704994031276369, guid: b944a57013afd4fc9b77e0a89df4c41b, type: 3}
@@ -257,6 +265,9 @@ PrefabInstance:
       value: UI_Dish_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b944a57013afd4fc9b77e0a89df4c41b, type: 3}
 --- !u!114 &4372058915774567748 stripped
 MonoBehaviour:
