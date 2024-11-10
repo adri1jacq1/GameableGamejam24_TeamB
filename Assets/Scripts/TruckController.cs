@@ -51,6 +51,10 @@ public class Controller : MonoBehaviour
             ingredientInventory.TryAddIngredient(food.ingredient);
             Destroy(food.gameObject);
         }
+        if (food != null &&  hasFood)
+        { 
+            Destroy(food.gameObject);
+        }
     }
 
     private void Fire()

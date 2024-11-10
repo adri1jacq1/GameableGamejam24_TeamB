@@ -47,7 +47,7 @@ public class Food : MonoBehaviour
     private void BecomeRotten()
     {
         isRotten = true;
-        Debug.Log("Food has become rotten!"); 
+        
         GameManager.Instance.HandleFoodRotten();
         sprite.material.color = Color.gray;
 
@@ -57,7 +57,7 @@ public class Food : MonoBehaviour
     {
         if (!isRotten)
         {
-            Debug.Log("Food eaten!");
+             
               GameManager.Instance.HandleFoodEaten();
              
             Destroy(gameObject);
@@ -65,6 +65,7 @@ public class Food : MonoBehaviour
         else
         {
             Debug.Log("Cannot eat rotten food!");
+
         }
     }
 }
