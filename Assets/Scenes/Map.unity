@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2558103754082473651, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683450365137343111, guid: 44eedc76cec6388489c8e0e6259663dc, type: 3}
       propertyPath: m_Name
       value: Food
@@ -13386,6 +13390,17 @@ Transform:
   - {fileID: 1655859355}
   m_Father: {fileID: 1510884049}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &318729876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4402600271007630518, guid: 46279604c148d44f388ed33bbebae791, type: 3}
+  m_PrefabInstance: {fileID: 1170405238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a6eca15e0c68423fa2cdaa361f96bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &327774501 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 120832201064825630, guid: 46279604c148d44f388ed33bbebae791, type: 3}
@@ -14077,6 +14092,10 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 400
       objectReference: {fileID: 0}
+    - target: {fileID: 7166932501019062818, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
+      propertyPath: ingredientInventory
+      value: 
+      objectReference: {fileID: 318729876}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15094,8 +15113,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charachterBar360: {fileID: 327774501}
-  TotalGameTime: 60
+  foodSpawnHandler: {fileID: 0}
+  healthStartTime: 20
+  lvlConstTime: 30
+  lvlTime: 0
   timeText: {fileID: 958792789}
+  eatingFoodHealthAmount: 5
+  rottenFoodHealthAmount: 2
 --- !u!4 &1992165467
 Transform:
   m_ObjectHideFlags: 0
