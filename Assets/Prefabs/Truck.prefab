@@ -4985,7 +4985,7 @@ GameObject:
   - component: {fileID: 8171903659856992344}
   - component: {fileID: 7166932501019062818}
   - component: {fileID: 1068376200319095972}
-  - component: {fileID: 3592817798370018491}
+  - component: {fileID: 2872734337896841293}
   m_Layer: 0
   m_Name: Truck
   m_TagString: Truck
@@ -5074,8 +5074,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101b5a4bef760c8409946a3ca1233e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  rotationSpeed: 50
+  dishInventory: {fileID: 0}
+  speed: 0.7
+  rotationSpeed: 130
   projectilleSpeed: 10
   projectilleSpawnDistance: 2
   rigidbody2D: {fileID: 1068376200319095972}
@@ -5109,8 +5110,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &3592817798370018491
-BoxCollider2D:
+--- !u!70 &2872734337896841293
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5141,19 +5142,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0013077557, y: -0.10007647}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 0.8}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.29925835, y: 0.5090897}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: -0.06}
+  m_Size: {x: 0.22, y: 0.45}
+  m_Direction: 0
 --- !u!1 &9176693282827955807
 GameObject:
   m_ObjectHideFlags: 0
