@@ -6,7 +6,7 @@ public class CharacterSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
     //public List<GameObject> characterPrefabsList = new List<GameObject>();
-    public GameObject characterPrefab;
+     
     public List<GameObject> characterPlacesList  ; 
     void Start()
     {
