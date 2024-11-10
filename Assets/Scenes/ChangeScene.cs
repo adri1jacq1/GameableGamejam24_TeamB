@@ -10,6 +10,8 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(sceneID);
     }
 
-    public void Test()
-    {}
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
 }
