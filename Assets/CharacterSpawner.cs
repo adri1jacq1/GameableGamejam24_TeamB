@@ -8,6 +8,7 @@ public class CharacterSpawner : MonoBehaviour
     //public List<GameObject> characterPrefabsList = new List<GameObject>();
     public GameObject characterPrefab;
     public List<GameObject> characterPlacesList = new List<GameObject>();
+    public Dictionary<GameObject,bool> characterPlaceDict = new Dictionary<GameObject, bool>();
     void Start()
     {
         StartSpawning();
@@ -30,6 +31,9 @@ public class CharacterSpawner : MonoBehaviour
             GameObject randomPlace = characterPlacesList[randomIndex2];
             GameObject character = Instantiate(characterPrefab, randomPlace.transform.position, Quaternion.identity);
             character.GetComponent<CharacterSetter>().SetCharacter();
+
+           
+
             //Instantiate(randomCharacter, randomPlace.transform.position, Quaternion.identity);
             //random
         }

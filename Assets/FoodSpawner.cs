@@ -7,6 +7,7 @@ public class FoodSpawner : MonoBehaviour
     // Start is called before the first frame update
     public GameObject foodPrefab;
     public GameObject foodSpawnPosition;
+    public GameObject spawnedFood;
     void Start()
     {
         
@@ -19,6 +20,10 @@ public class FoodSpawner : MonoBehaviour
     }
     public void SpawnFood()
     {  
-        Instantiate(foodPrefab, foodSpawnPosition.transform.position, Quaternion.identity);
+       if(spawnedFood != null)
+        {
+            spawnedFood = Instantiate(foodPrefab, foodSpawnPosition.transform.position, Quaternion.identity); 
+        }
+
     }
 }
