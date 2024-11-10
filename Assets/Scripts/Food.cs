@@ -20,6 +20,15 @@ public class Food : MonoBehaviour
                 BecomeRotten();
             }
         }
+        if (isRotten)
+        {
+            freshnessDuration -= Time.deltaTime;
+            if (freshnessDuration <= -1)
+            {
+                freshnessDuration = 0;
+                Destroy(gameObject);
+            }
+        }
     }
 
     private void BecomeRotten()
@@ -28,6 +37,7 @@ public class Food : MonoBehaviour
         Debug.Log("Food has become rotten!"); 
         GameManager.Instance.HandleFoodRotten();
         GetComponent<Renderer>().material.color = Color.gray;
+
     }
 
     public void EatFood()

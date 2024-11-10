@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  rotationSpeed: 5
   projectilleSpeed: 10
   projectilleSpawnDistance: 2
   rigidbody2D: {fileID: 1068376200319095972}
@@ -130,7 +131,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &3592817798370018491
 BoxCollider2D:
   m_ObjectHideFlags: 0
