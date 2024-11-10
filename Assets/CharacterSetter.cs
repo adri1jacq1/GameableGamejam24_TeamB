@@ -9,10 +9,10 @@ public class CharacterSetter : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
-        //for (int i = 0; i < characterList.Count; i++)
-        //{
-        //    characterList[i].SetActive(false);
-        //}
+        for (int i = 0; i < characterList.Count; i++)
+        {
+            characterList[i].SetActive(false);
+        }
          
     }
     private void Update()
