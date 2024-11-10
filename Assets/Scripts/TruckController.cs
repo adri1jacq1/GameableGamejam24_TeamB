@@ -3,6 +3,10 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     public float speed;
+
+    public float rotationSpeed;
+
+
     public float projectilleSpeed;
     public float projectilleSpawnDistance;
     public Rigidbody2D rigidbody2D;
@@ -13,11 +17,10 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var vertical = Input.GetAxis("Vertical") * speed;
-        var horizontal = Input.GetAxis("Horizontal") * speed;
-        rigidbody2D.velocity = new Vector3(horizontal, vertical, 0);
+        rigidbody2D.velocity = Input.GetAxis("Vertical") * speed * transform.up;
+        rigidbody2D.angularVelocity = -Input.GetAxis("Horizontal") * rotationSpeed;
 
-        if(Input.GetButtonUp("Fire1"))
+        if (Input.GetButtonUp("Fire1"))
         {
             Fire();
         }
