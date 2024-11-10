@@ -58,8 +58,8 @@ public class Controller : MonoBehaviour
     {
         if (dishInventory.HasFood())
         {
-            var foodToThrow = dishInventory.RemoveDish(); // TODO: use sprite from foodToThrow as projectile
             var food = Instantiate<FoodProjectile>(foodPrefab);
+            food.SetDish(dishInventory.RemoveDish());
             var direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             direction = direction.normalized;
             food.rigidbody2D.position = transform.position + direction * projectilleSpawnDistance;
