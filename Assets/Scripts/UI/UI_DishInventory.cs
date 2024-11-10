@@ -6,7 +6,7 @@ public class UI_DishInventory : MonoBehaviour
 {
     [SerializeField]
     private List<UI_Dish> uI_DishesSpacesList;
-    private List<SO_Dish> dishesDataList;
+    private List<SO_Dish> dishesDataList = new();
 
     public void AddDish(SO_Dish addedDish)
     {

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     [SerializeField]
-    private UI_IngredientsInventory ingredientInventory;
+    private UI_DishInventory dishInventory;
 
 
     public float speed;
@@ -48,7 +48,7 @@ public class Controller : MonoBehaviour
         {
             hasFood = true;
             canon.color = Color.green;
-            ingredientInventory.TryAddIngredient(food.ingredient);
+            dishInventory.AddDish(food.dish);
             Destroy(food.gameObject);
         }
         if (food != null &&  hasFood)
