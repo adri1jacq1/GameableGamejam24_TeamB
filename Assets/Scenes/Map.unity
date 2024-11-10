@@ -208,8 +208,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 636779067}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11813,7 +11813,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636779065}
   m_Enabled: 1
-  m_CellSize: {x: 0.08, y: 0.08, z: 0}
+  m_CellSize: {x: 1, y: 1, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -11893,6 +11893,18 @@ PrefabInstance:
     - target: {fileID: 5816921438209140077, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
       propertyPath: m_Name
       value: Truck
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120233940942981590, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120233940942981590, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120233940942981590, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7120233940942981590, guid: 765eea36071bf334bb3fd3a47d75e80a, type: 3}
       propertyPath: m_LocalPosition.x
