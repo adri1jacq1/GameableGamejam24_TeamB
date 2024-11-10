@@ -9,6 +9,13 @@ public class FoodSpawnHandler : MonoBehaviour
     void Start()
     {
         StartSpawning();
+        foreach (GameObject restaurant in restaurantList)
+        {
+            if (restaurant.GetComponent<FoodSpawner>() == null)
+            {
+                Destroy(restaurant);
+            }
+        }
     }
     
     void StartSpawning()

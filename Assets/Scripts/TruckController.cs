@@ -22,7 +22,11 @@ public class Controller : MonoBehaviour
     void Update()
     {
         rigidbody2D.velocity = Input.GetAxis("Vertical") * speed * transform.up;
-        rigidbody2D.angularVelocity = -Input.GetAxis("Horizontal") * rotationSpeed;
+        if(Input.GetAxis("Vertical")<0)
+        {
+            rigidbody2D.angularVelocity = Input.GetAxis("Horizontal") * rotationSpeed;
+        }
+        else rigidbody2D.angularVelocity = -Input.GetAxis("Horizontal") * rotationSpeed;
         UpdateCanonRotation();
 
         if (Input.GetButtonUp("Fire1"))
@@ -58,8 +62,8 @@ public class Controller : MonoBehaviour
     {
         if (dishInventory.HasFood())
         {
-            var foodToThrow = dishInventory.RemoveDish(); // TODO: use sprite from foodToThrow as projectile
             var food = Instantiate<FoodProjectile>(foodPrefab);
+            food.SetDish(dishInventory.RemoveDish());
             var direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             direction = direction.normalized;
             food.rigidbody2D.position = transform.position + direction * projectilleSpawnDistance;
