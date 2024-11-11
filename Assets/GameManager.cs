@@ -6,16 +6,16 @@ public class GameManager : MonoBehaviour
     public GameObject charachterBar360;
     public FoodSpawnHandler foodSpawnHandler;
     public static GameManager Instance { get; private set; }
-    public float healthStartTime = 20f;
+    public float healthConstTime = 20f;
     public float lvlConstTime = 30;
     public float lvlTime;
     private float healthTime;
     float gameTime;
     public TMPro.TextMeshProUGUI timeText;
     public int eatingFoodHealthAmount = 5;
-    public int rottenFoodHealthAmount = 2;
+    public float rottenFoodHealthAmount = 0.25f;
     int lvl;
-    public int foodEaten;
+    public int foodEaten; 
     private void Awake()
     {
         if (Instance == null)
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         if (foodSpawnHandler ==null) foodSpawnHandler = FindFirstObjectByType<FoodSpawnHandler>();
-        healthTime = healthStartTime;
+        healthTime = healthConstTime;
         lvl = 0;
     } 
 
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
         gameTime += Time.deltaTime;
         lvlTime += Time.deltaTime; 
         timeText.text =  "Level : "+  lvl.ToString("F2") + " health  " + healthTime.ToString("F2");
-        float rotationAmount = (healthStartTime - healthTime) * 360 / healthStartTime;
+        float rotationAmount = (healthConstTime - healthTime) * 270 / healthConstTime;
         if (rotationAmount > 360)
         {
             rotationAmount = 360;
@@ -69,13 +69,13 @@ public class GameManager : MonoBehaviour
 
     public void HandleFoodEaten()
     { 
-        healthTime +=  eatingFoodHealthAmount;
+        healthTime +=  eatingFoodHealthAmount; 
         ++foodEaten;
     }
 
     public void HandleFoodRotten()
     {
-        //healthTime -=  rottenFoodHealthAmount;
+        healthTime -=  rottenFoodHealthAmount;
     }
 
     private void GameOver()

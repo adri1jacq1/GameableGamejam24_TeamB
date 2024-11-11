@@ -20,7 +20,15 @@ public class Character : MonoBehaviour
              GameManager
             .Instance
             .HandleFoodEaten();
-        
+
+        if (AudioManagerSingleton
+            .Instance
+             != null)
+            AudioManagerSingleton
+                .Instance
+                .PlayEatingSound();
+
+
     }
 
 }

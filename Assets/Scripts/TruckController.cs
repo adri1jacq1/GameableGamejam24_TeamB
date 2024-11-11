@@ -62,6 +62,7 @@ public class Controller : MonoBehaviour
     {
         if (dishInventory.HasFood())
         {
+
             var food = Instantiate<FoodProjectile>(foodPrefab);
             food.SetDish(dishInventory.RemoveDish());
             var direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -70,6 +71,12 @@ public class Controller : MonoBehaviour
             food.rigidbody2D.velocity = direction.normalized * projectilleSpeed;
             canon.color = Color.white;
             particleSystem.Play();
+           
+            if (AudioManagerSingleton
+                .Instance  != null)
+                AudioManagerSingleton
+                    .Instance
+                    .PlayShootSound();
         }
     }
 }
